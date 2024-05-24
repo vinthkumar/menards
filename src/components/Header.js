@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/img/menards-logo-lg-no-slogan.png';
+import logo from '../assets/img/menards-logo.svg';
 import { FaUser, FaShoppingCart } from 'react-icons/fa';
 import { BiMenu } from 'react-icons/bi';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +17,7 @@ const Header = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-primary py-3">
                 <Link className="navbar-brand px-5" to="/">
-                    <img src={logo} alt="logo" height={30} />
+                    <img src={logo} alt="logo" height={40} />
                 </Link>
                 <button className="navbar-toggler mx-4" type="button" onClick={toggleMenu}>
                     <BiMenu />

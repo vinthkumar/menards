@@ -7,6 +7,7 @@ import singlewall from '../assets/img/single-wall.svg';
 import galley from '../assets/img/galley.svg';
 import small from '../assets/img/small.svg';
 import medium from '../assets/img/medium.svg';
+import large from '../assets/img/large.svg';
 import modern from '../assets/img/modern.svg';
 import contemporary from '../assets/img/contemporary.svg';
 import traditional from '../assets/img/traditional.svg';
@@ -124,7 +125,7 @@ const Accordion = () => {
                                     {[
                                         { val: 'small', img: small, text: 'Small' },
                                         { val: 'medium', img: medium, text: 'Medium' },
-                                        { val: 'large', img: ushape, text: 'Large' }
+                                        { val: 'large', img: large, text: 'Large' }
                                     ].map((item, index) => (
                                         <div key={index} className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 align-items-center justify-content-center">
                                             <div
@@ -140,7 +141,7 @@ const Accordion = () => {
                                         </div>
                                     ))}
                                 </div>
-                                {error && (!isItemSelected(0) || !isItemSelected(1)) && <div className="alert alert-danger">Please select a kitchen layout and size before continuing.</div>}
+                                {error && (!isItemSelected(0) || !isItemSelected(1)) && <div className="alert alert-danger my-3">Please select a kitchen layout and size before continuing.</div>}
                                 <div className="row py-2">
                                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <button id="firstStepBtn" className="btn btn-primary-1 mt-2 fs-5 rounded-pill px-3" type="button" onClick={handleContinue}>Continue</button>
@@ -190,7 +191,7 @@ const Accordion = () => {
                                         </div>
                                     ))}
                                 </div>
-                                {error && !isItemSelected(2) && <div className="alert alert-danger">Please select a decor style before continuing.</div>}
+                                {error && !isItemSelected(2) && <div className="alert alert-danger my-3">Please select a decor style before continuing.</div>}
                                 <div className="row py-2">
                                     <div className="col ">
                                         <button id="ThirdStepBtn" className="btn btn-primary-1 mt-2 fs-5 rounded-pill px-3" type="button" onClick={handleContinue}>Continue</button>
@@ -245,7 +246,7 @@ const Accordion = () => {
                                         </div>
                                     ))}
                                 </div>
-                                {error && !isItemSelected(3) && <div className="alert alert-danger">Please select a storage solution package before continuing.</div>}
+                                {error && !isItemSelected(3) && <div className="alert alert-danger my-3">Please select a storage solution package before continuing.</div>}
                                 <div className="row py-2">
                                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <button id="FourthStepBtn" className="btn btn-primary-2 btn-lg mt-2 fs-5 rounded-pill px-3" type="button" onClick={handleDone}>Done</button>
@@ -276,7 +277,7 @@ const Accordion = () => {
                             )}
                         </div>
                         <p className='small text-light2'>Please note this estimate does not include current promotional pricing. Be sure to ask your kitchen designer about available promotions.</p>
-                        <button className="btn btn-primary">GET FREE DESIGN</button>
+                        <button className="btn btn-primary fs-6">GET FREE DESIGN</button>
                     </>
                 </div>
 

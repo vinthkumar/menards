@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/style.css';
-import logo from '../assets/img/menards-logo-lg-no-slogan.png';
+import logo from '../assets/img/menards-logo.svg';
 import { FaInstagram, FaFacebook, FaPinterest } from 'react-icons/fa';
 import { TfiTwitterAlt } from 'react-icons/tfi';
 
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className='row bg-primary py-3'>
                 <div className="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <Link className="navbar-brand px-5 mb-3 mb-md-0" to="/">
-                        <img src={logo} alt="logo" height={30} />
+                        <img src={logo} alt="logo" height={40} />
                     </Link>
                     <div className="footer-links d-flex flex-column flex-md-row align-items-center mb-3 mb-md-0">
                         <p className="mx-4 my-1"><Link to="/sitemap" className="text-white text-decoration-none">SiteMap</Link></p>
